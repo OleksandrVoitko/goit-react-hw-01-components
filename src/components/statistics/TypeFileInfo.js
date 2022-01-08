@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
+import color from "./rundomeColor";
+import { Item } from "./Statistics.styled";
 
 export default function TypeFileInfo({ label, percentage }) {
   return (
-    <li className="item">
+    <Item style={{ backgroundColor: color() }}>
       <span className="label">{label}</span>
       <span className="percentage"> {percentage} %</span>
-    </li>
+    </Item>
   );
 }
 

@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import TypeFileInfo from "./TypeFileInfo";
+import { SectionStatistics, Title, StatList } from "./Statistics.styled";
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <SectionStatistics>
+      {title && <Title>{title}</Title>}
 
-      <ul className="stat-list">
+      <StatList>
         {stats.map((item) => (
           <TypeFileInfo
             label={item.label}
@@ -14,8 +15,8 @@ export default function Statistics({ title, stats }) {
             key={item.id}
           />
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </SectionStatistics>
   );
 }
 
