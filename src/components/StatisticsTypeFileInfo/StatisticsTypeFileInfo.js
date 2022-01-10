@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import color from "./rundomeColor";
-import { Item } from "./Statistics.styled";
+import color from "../../utilities/randomColor";
+import { Item } from "./StatisticsTypeFileInfo.styled";
 
 export default function TypeFileInfo({ label, percentage }) {
   return (

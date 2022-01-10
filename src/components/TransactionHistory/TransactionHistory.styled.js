@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const TableTransactionHistory = styled.table`
   max-width: 1100px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #c7c0c0;
   border-radius: 6px;
   box-shadow: 4px 8px 10px -4px #a09c9c;
   border-spacing: 0;
@@ -44,7 +44,7 @@ export const TableBody = styled.tbody`
   background-color: rgb(241, 243, 241);
 `;
 export const TableRow = styled.tr`
-  &:nth-child(odd) {
+  &:nth-of-type(odd) {
     background-color: #fff;
   }
 `;

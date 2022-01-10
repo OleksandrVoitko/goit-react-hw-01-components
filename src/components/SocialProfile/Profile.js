@@ -11,7 +11,13 @@ import {
   Label,
 } from "./Profile.styled";
 
-export default function Profile({ userName, tag, location, avatar, stats }) {
+export default function Profile({
+  userName,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) {
   return (
     <DivProfile>
       <Description>
@@ -23,15 +29,15 @@ export default function Profile({ userName, tag, location, avatar, stats }) {
       <Stats>
         <Items>
           <Label>Followers </Label>
-          <Quantity>{stats.followers}</Quantity>
+          <Quantity>{followers}</Quantity>
         </Items>
         <Items>
           <Label>Views </Label>
-          <Quantity>{stats.views}</Quantity>
+          <Quantity>{views}</Quantity>
         </Items>
         <Items>
           <Label>Likes </Label>
-          <Quantity>{stats.likes}</Quantity>
+          <Quantity>{likes}</Quantity>
         </Items>
       </Stats>
     </DivProfile>

@@ -23,11 +23,4 @@ export const StatList = styled.ul`
   padding: 0;
   margin: 0;
 `;
-export const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #aaa;
-  color: #fff;
-`;
+

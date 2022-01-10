@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import TypeFileInfo from "./TypeFileInfo";
+import TypeFileInfo from "../StatisticsTypeFileInfo/StatisticsTypeFileInfo";
 import { SectionStatistics, Title, StatList } from "./Statistics.styled";
 
 export default function Statistics({ title, stats }) {
@@ -8,12 +8,8 @@ export default function Statistics({ title, stats }) {
       {title && <Title>{title}</Title>}
 
       <StatList>
-        {stats.map((item) => (
-          <TypeFileInfo
-            label={item.label}
-            percentage={item.percentage}
-            key={item.id}
-          />
+        {stats.map(({ label, percentage, id }) => (
+          <TypeFileInfo label={label} percentage={percentage} key={id} />
         ))}
       </StatList>
     </SectionStatistics>
