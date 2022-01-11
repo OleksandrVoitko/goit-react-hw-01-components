@@ -23,4 +23,3 @@ export const StatList = styled.ul`
   padding: 0;
   margin: 0;
 `;
-
